@@ -15,3 +15,7 @@ function agregarAmigo() {
         alert('Por favor, ingresa un nombre válido.');
     }
 }
+{
+    document.getElementById("listaAmigos");
+    lista.innerHTML = "";
+}
