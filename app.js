@@ -13,7 +13,7 @@ function agregarAmigo() {
         document.getElementById('amigo').value = ''; // Limpia el input
         mostrarAmigos(amigos); // Actualiza la lista en la página
     } else {
-        alert('Por favor, ingresa un nombre válido.');
+        alert("Por favor, inserte un nombre.");
     }
 }
 function mostrarAmigos(amigos) {
@@ -32,11 +32,13 @@ function mostrarAmigos(amigos) {
 function sortearAmigo() {
     // Verificar que la lista no esté vacía
     if (amigos.length === 0) {
-        alert('No hay nombres en la lista para sortear');
+        //indicar que no hay nombres en la lista
+        document.getElementById('resultado').innerHTML = 'Ups... No encontramos a tus amigos en la lista, ¡ingresalos!';
         return;
     }
     if (amigos.length === 1) {
-        alert('Solo hay un nombre en la lista, ingresa más amigos')
+        //indicar que agregue más amigos a la lista
+        document.getElementById('resultado').innerHTML = 'Agrega más amigos a la lista!';
         return;
     }
 
