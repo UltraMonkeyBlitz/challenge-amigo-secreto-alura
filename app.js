@@ -59,5 +59,5 @@ function sortearAmigo() {
     const nombreSorteado = amigos[Math.floor(Math.random() * amigos.length)];
 
      // Mostrar el resultado
-     document.getElementById('resultado').innerHTML = `El amigo sorteado es: ${nombreSorteado}`;
+     document.getElementById('resultado').innerHTML = `El amigo sorteado es: ${nombreSorteado}!`;
 }
