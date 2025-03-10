@@ -27,3 +27,8 @@ function mostrarAmigos(amigos) {
     }
     
 }
+
+//función para sortear amigo
+function sortearAmigo() {
+    asd
+}
