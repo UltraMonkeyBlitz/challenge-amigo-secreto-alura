@@ -39,4 +39,8 @@ function sortearAmigo() {
         alert('Solo hay un nombre en la lista, ingresa más amigos')
         return;
     }
+
+    //selección un amigo aleatorio del Array
+    const = nombreSorteado = amigos[Math.floor(Math.random() * amigos.length)];
+    
 }
