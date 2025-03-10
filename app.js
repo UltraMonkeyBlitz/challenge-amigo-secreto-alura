@@ -16,7 +16,7 @@ function agregarAmigo() {
         }
         // Agrega el amigo al array
         amigos.push(input);
-        console.log(amigos);
+        //console.log(amigos);
         // Limpia el input
         document.getElementById('amigo').value = '';
         // Actualiza la lista en la página
