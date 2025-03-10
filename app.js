@@ -8,10 +8,14 @@ function agregarAmigo() {
 
     // Verifica que el input no esté vacío
     if (input.trim() !== '') {
-        amigos.push(input); // Agrega el amigo al array
-        console.log(amigos); // Muestra el array actualizado en la consola
-        document.getElementById('amigo').value = ''; // Limpia el input
-        mostrarAmigos(amigos); // Actualiza la lista en la página
+        // Agrega el amigo al array
+        amigos.push(input);
+        console.log(amigos);
+        // Limpia el input
+        document.getElementById('amigo').value = '';
+        // Actualiza la lista en la página
+        mostrarAmigos(amigos);
+        // Mensaje amigo agregado
         document.getElementById('resultado').innerHTML = `${input} ha sido agregado a la lista de amigos.`;
     } else {
         alert("Por favor, inserte un nombre.");
@@ -19,7 +23,8 @@ function agregarAmigo() {
 }
 function mostrarAmigos(amigos) {
     const lista = document.getElementById("listaAmigos");
-    lista.innerHTML = ""; //limpia lista
+    //limpia lista
+    lista.innerHTML = "";
 
     for (let i = 0; i < amigos.length; i++) {
         const nuevoElemento = document.createElement("li");
