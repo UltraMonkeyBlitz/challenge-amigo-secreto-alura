@@ -41,6 +41,8 @@ function sortearAmigo() {
     }
 
     //selección un amigo aleatorio del Array
-    const = nombreSorteado = amigos[Math.floor(Math.random() * amigos.length)];
-    
+    const nombreSorteado = amigos[Math.floor(Math.random() * amigos.length)];
+
+     // Mostrar el resultado
+     document.getElementById('resultado').innerHTML = `El amigo sorteado es: ${nombreSorteado}`;
 }
