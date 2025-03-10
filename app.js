@@ -8,6 +8,12 @@ function agregarAmigo() {
 
     // Verifica que el input no esté vacío
     if (input.trim() !== '') {
+        //Indica que el amigo ya fue ingresado a la lista y que ingrese otro
+        if (amigos.includes(input)) {
+            document.getElementById('resultado').innerHTML = `${input} ya está en la lista, ingresa otro amigo`;
+            document.getElementById('amigo').value = '';
+            return;
+        }
         // Agrega el amigo al array
         amigos.push(input);
         console.log(amigos);
