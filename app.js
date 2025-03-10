@@ -12,6 +12,7 @@ function agregarAmigo() {
         console.log(amigos); // Muestra el array actualizado en la consola
         document.getElementById('amigo').value = ''; // Limpia el input
         mostrarAmigos(amigos); // Actualiza la lista en la página
+        document.getElementById('resultado').innerHTML = `${input} ha sido agregado a la lista de amigos.`;
     } else {
         alert("Por favor, inserte un nombre.");
     }
@@ -41,6 +42,7 @@ function sortearAmigo() {
         document.getElementById('resultado').innerHTML = 'Agrega más amigos a la lista!';
         return;
     }
+    
 
     //selección un amigo aleatorio del Array
     const nombreSorteado = amigos[Math.floor(Math.random() * amigos.length)];
