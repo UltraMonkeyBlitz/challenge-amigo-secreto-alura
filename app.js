@@ -30,5 +30,13 @@ function mostrarAmigos(amigos) {
 
 //función para sortear amigo
 function sortearAmigo() {
-    asd
+    // Verificar que la lista no esté vacía
+    if (amigos.length === 0) {
+        alert('No hay nombres en la lista para sortear');
+        return;
+    }
+    if (amigos.length === 1) {
+        alert('Solo hay un nombre en la lista, ingresa más amigos')
+        return;
+    }
 }
